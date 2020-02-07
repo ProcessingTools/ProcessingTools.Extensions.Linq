@@ -17,11 +17,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\debug\ProcessingTools.Extensions.Linq.xml</DocumentationFile>
     <OutputPath>bin\debug</OutputPath>
+    <NoWarn>1701;1702;CA1822</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>bin\release</OutputPath>
     <DocumentationFile>bin\release\ProcessingTools.Extensions.Linq.xml</DocumentationFile>
+    <NoWarn>1701;1702;CA1822</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
