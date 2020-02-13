@@ -8,7 +8,7 @@ namespace ProcessingTools.Extensions.Linq.Expressions
     using System.Collections.Generic;
     using System.Linq;
     using System.Linq.Expressions;
-    using ProcessingTools.Extensions.Linq.Dynamic;
+    using ProcessingTools.Extensions.Dynamic;
 
     /// <summary>
     /// System.Linq.Expressions extensions.
