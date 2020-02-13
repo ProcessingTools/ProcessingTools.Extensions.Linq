@@ -21,7 +21,7 @@
 
     <PackageTags>linq, extensions, tests</PackageTags>
 
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
