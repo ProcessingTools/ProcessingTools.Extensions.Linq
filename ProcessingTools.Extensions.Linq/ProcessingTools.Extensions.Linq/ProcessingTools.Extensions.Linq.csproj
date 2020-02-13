@@ -15,8 +15,8 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\debug\ProcessingTools.Extensions.Linq.xml</DocumentationFile>
     <OutputPath>bin\debug</OutputPath>
+    <DocumentationFile>bin\debug\ProcessingTools.Extensions.Linq.xml</DocumentationFile>
     <NoWarn>1701;1702;CA1822</NoWarn>
   </PropertyGroup>
 
@@ -39,6 +39,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="ProcessingTools.Extensions.Dynamic" Version="0.1.0" />
     <PackageReference Include="SonarAnalyzer.CSharp" Version="8.3.0.14607">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
