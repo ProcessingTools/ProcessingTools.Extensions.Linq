@@ -22,6 +22,8 @@
     <PackageTags>linq, extensions, tests</PackageTags>
 
     <Version>0.1.1</Version>
+
+    <Copyright>Copyright © 2020 ProcessingTools</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
