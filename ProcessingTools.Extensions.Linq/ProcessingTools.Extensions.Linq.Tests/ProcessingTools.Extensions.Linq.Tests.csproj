@@ -13,15 +13,15 @@
 
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
 
-    <PackageProjectUrl>https://github.com/bozhink/ProcessingTools.Extensions.Linq</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ProcessingTools/ProcessingTools.Extensions.Linq</PackageProjectUrl>
 
-    <RepositoryUrl>https://github.com/bozhink/ProcessingTools.Extensions.Linq</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ProcessingTools/ProcessingTools.Extensions.Linq.git</RepositoryUrl>
 
     <RepositoryType>git</RepositoryType>
 
     <PackageTags>linq, extensions, tests</PackageTags>
 
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
 
     <Copyright>Copyright © 2020 ProcessingTools</Copyright>
   </PropertyGroup>
