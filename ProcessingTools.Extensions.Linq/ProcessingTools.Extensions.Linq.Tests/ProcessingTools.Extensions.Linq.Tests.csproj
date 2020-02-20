@@ -21,7 +21,7 @@
 
     <PackageTags>linq, extensions, tests</PackageTags>
 
-    <Version>0.1.3</Version>
+    <Version>0.1.4</Version>
 
     <Copyright>Copyright © 2020 ProcessingTools</Copyright>
   </PropertyGroup>
