@@ -1,0 +1,35 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Install dependencies
+      run: dotnet restore ProcessingTools.Extensions.Linq/ProcessingTools.Extensions.Linq.sln
+    - name: Build
+      run: dotnet build --configuration Release --no-restore ProcessingTools.Extensions.Linq/ProcessingTools.Extensions.Linq.sln
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal ProcessingTools.Extensions.Linq/ProcessingTools.Extensions.Linq.sln
+    - name: Publish
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+        PROJECT_FILE_PATH: ProcessingTools.Extensions.Linq/ProcessingTools.Extensions.Linq/ProcessingTools.Extensions.Linq.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish EntityFramework
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+        PROJECT_FILE_PATH: ProcessingTools.Extensions.Linq/ProcessingTools.Extensions.Linq.EntityFramework/ProcessingTools.Extensions.Linq.EntityFramework.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
